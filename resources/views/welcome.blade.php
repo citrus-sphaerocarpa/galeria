@@ -38,7 +38,7 @@
             </div>
         
             <p class="uk-margin-large uk-margin-remove-bottom">
-                <a class="uk-link-muted" href="{{ route('register') }}">{{ __('Don\'t you have an account?') }}</a>
+                <a class="uk-link-muted" href="{{ route('register') }}">{{ __('Create your galeria account') }}</a>
             </p>
         </div>
     </form>
