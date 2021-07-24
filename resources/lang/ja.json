@@ -1,0 +1,108 @@
+{
+    "About": "約",
+    "Account": "アカウント",
+    "A fresh verification link has been sent to your email address.": "登録されたメールアドレスに認証メールを再送しました。",
+    "All Notifications": "すべての通知",
+    "Are you sure you want to delete your account? All of your data and information will be deleted.": "本当にアカウントを消去しますか？アカウントに関連するすべてのデータが消去されます。",
+
+    "Biography": "バイオグラフィ",
+    "By signing up, you agree to our Terms, Data Policy and Cookies Policy.": "登録することで、galeriaの利用規約、データに関するポリシー、Cookieポリシーに同意するものとします。",
+    "Before proceeding, please check your email for a verification link.": "登録されたメールアドレスに認証メールを送信しました。メールに記載されたURLをクリックして認証を完了させてください。",
+
+    "Cancel": "キャンセル",
+    "Caption": "キャプション",
+    "Change Password": "変更",
+    "Chat": "チャット",
+    "Comment": "コメント",
+    "Confirm New Password": "新しいパスワード（確認用）",
+    "Confirm Password": "パスワード（確認用）",
+    "Current Password": "現在のパスワード",
+    "Current password does not match.": "現在のパスワードが一致しません。",
+
+    "Delete": "消去",
+    "Delete Your Account": "アカウント消去",
+    "Don't you have an account?": "アカウントをお持ちでないですか？",
+    "Do you really want to delete the seleceted comment? This process cannot be undone.": "本当にコメントを消去しますか？この操作は元に戻せません。",
+    "Do you really want to delete the seleceted post? This process cannot be undone.": "本当に投稿を消去しますか？この操作は元に戻せません。",
+    "Display Name": "ディスプレイネーム",
+
+    "Enter the email address that you used to register.": "登録されているメールアドレスを入力してください。",
+    "Enter your current password to confirm cancellation of your account.": "アカウント消去を完了するために現在のパスワードを入力してください。",
+
+    "Edit": "編集",
+    "Edit Comment": "コメントを編集",
+    "Edit Post": "投稿を編集",
+    "Edit Profile": "プロフィールを編集",
+    "E-mail Address": "メールアドレス",
+
+    "Friends": "友達",
+    "Follower": "フォロワー",
+    "followed you.": "さんからフォローされました。",
+    "Following": "フォロー中",
+    "Forgot your password?": "パスワードを忘れた場合",
+
+    "If you did not receive the email, please request another email.": "認証メールが届かない場合は、認証メールを再送してください。",
+    "Image": "イメージ",
+
+    "Maximum upload file size: 3MB": "最大アップロードサイズ: 3MB",
+    "My account": "マイアカウント",
+
+    "Likes": "お気に入り",
+
+    "Name": "氏名",
+    "New Followers": "新しいフォロワー",
+    "New Messages": "新しいメッセージ",
+    "New Password": "新しいパスワード",
+    "New Post": "新しい投稿",
+    "No": "いいえ",
+    "No messages.": "メッセージはありません。",
+    "No notifications.": "通知はありません。",
+    "No posts found.": "投稿はありません。",
+    "No results found.": "一致する結果はありません。",
+    "Notifications": "通知",
+
+    "Password": "パスワード",
+    "Password successfully changed.": "パスワードを変更しました。",
+    "Permanently Delete My Account": "アカウントを完全に消去",
+    "Personal Information": "個人情報",
+    "Post": "投稿",
+    "Preview Image": "イメージプレビュー",
+
+    "Remember me": "ログイン状態を保存する",
+    "Reply": "返信",
+    "Request another email": "認証メールの再送",
+    "Reset Your Password": "パスワードの再設定",
+    "Reset Password": "パスワードの再設定",
+    "result": "件",
+    "results": "件",
+
+    "Language": "言語",
+    "Log in": "ログイン",
+    "Log out": "ログアウト",
+
+    "Save": "保存",
+    "Search": "検索",
+    "Security": "セキュリティ",
+    "See All": "すべて見る",
+    "Send": "送信",
+    "sent you a message.": "さんからメッセージがあります。",
+    "Settings": "設定",
+    "Sign up": "登録",
+    "Successfully saved the settings.": "設定を変更しました。",
+
+    "Tags": "タグ",
+    "This comment has been deleted.": "このコメントは消去されました。",
+
+    "Username": "ユーザー名",
+
+    "Verify Your Email Address": "メールアドレスの認証",
+    "View Only": "表示のみ",
+
+    "We’ll send you an email with a link to reset your password.": "パスワード再設定用のURLが記載されたメールを送信します。",
+    "We'll send you a notification when someone send you a new message on galeria.": "新しいメッセージを受信したとき、通知を受け取ることができます。",
+    "We'll send you a notification when a new person starts following you.": "新しいアカウントにフォローされたとき、通知を受け取ることができます。",
+    "When you delete your account, your profile, photos, comments, likes and followers will be permanently removed.": "アカウントを消去すると、アカウントのプロフィールや写真、コメント、いいね、フォロワー、その他のデータが完全に消去されます。",
+
+    "Yes": "はい",
+    "Your email address was successfully verified.": "登録されたメールアドレスを確認しました。"
+}

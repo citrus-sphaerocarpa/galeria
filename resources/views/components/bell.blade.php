@@ -1,0 +1,1 @@
+<notification-icon :user-id="{{ auth()->user()->id }}"></notification-icon>

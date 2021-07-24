@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+
+body {
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+
+}
+
+.gradient-background {
+  background: linear-gradient(#1e87f0, #fff);
+}
+
+.home-background {
+  background: linear-gradient(#fff, #f8f8f8);
+}
+
+.postbar-background {
+  background-color: #1e87f0;
+}
+
+.sidenav-background {
+  background-color: #1e87f0;
+}
+
+.notification-icon {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.notification-list {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.favorite-icon {
+  color: #f0506e;
+}
+
+.new-line {
+  white-space: pre-wrap;
+}
+
+.logo {
+  font-family: 'Benne', serif;
+}
+
+.navbar-bottom {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  right:5px;
+}
+
+/* .textarea-comment {
+  border-radius: 30px;
+} */
+
+.square-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.square-container img {
+  max-width: 100%;
+  padding-top: 100%;
+  object-fit: cover; /* この一行を追加するだけ！ */
+}
+
+.square-container a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+}
+
+.square-child {
+  width: 100%;
+  padding-top: 100%;
+}
+
+.uk-button {
+  border-radius: 100vh;
+  text-transform: none;
+}
+
+.uk-checkbox {
+  border: 1px solid #666;
+}
+
+.uk-offcanvas-bar {
+  background: linear-gradient(#1e87f0, #fff);
+}
+
+.uk-dropdown {
+  max-width: 300px;
+  z-index: 1010;
+}
+
+.uk-placeholder {
+  border: none;
+}
+
+.uk-dropdown-nav {
+  white-space: normal;
+}
+
+.uk-modal {
+  z-index: 1020;
+}
+
+.textarea-fix {
+  resize: none;
+}
+.form-button {
+  margin: 0;
+  border: none;
+  border-radius: 100vh;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+
+.profile-image > canvas {
+  border-radius: 50%;
+}
+
+.comment-icon-hidden {
+  display: none;
+}
+
+/*吹き出し*/
+.balloon-right{
+  /* margin: 30px 0; */
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start; /*縦位置を上揃え*/
+/*   align-items: center; */ /*縦位置を真ん中揃え*/
+}
+.balloon-right{
+  justify-content:flex-end;
+}
+
+.faceicon img{
+  width: 60px; /*任意のサイズ*/
+  border-radius: 50%;
+  height: auto;
+}
+
+.message-right {
+  max-width: 300px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px 12px 0 12px;
+  color: #f8f8f8;
+  background: #1e87f0;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
+/*   align-items: center; */
+}
+.message-right p{
+  margin:8px 0 0 !important; 
+}
+.message-right p:first-child{
+  margin-top:0 !important;
+}
+/* .message-right:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+}
+
+.balloon-right .message-right:after {
+  right: -26px;
+  border-left: 22px solid #1e87f0;
+} */
+
+
+
+
+
+
+/*吹き出し*/
+.balloon-left{
+  /* margin: 30px 0; */
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start; /*縦位置を上揃え*/
+/*   align-items: center; */ /*縦位置を真ん中揃え*/
+}
+
+.balloon-left .faceicon{
+  margin-right: 10px;
+}
+
+.message-left {
+  max-width:250px; /*最大幅は任意*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 17px 13px 15px 18px;
+  border-radius: 12px 12px 12px 0;
+  color: #666;
+  background: #e6e6e6;/*色は任意*/
+  box-sizing:border-box;
+  margin:0 !important;
+  line-height:1.5;
+/*   align-items: center; */
+}
+.message-left p{
+  margin:8px 0 0 !important; 
+}
+.message-left p:first-child{
+  margin-top:0 !important;
+}
+/* .message-left:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+} */
+
+/* .balloon-left .message-left:after {
+  left: -26px;
+  border-right: 22px solid #e6e6e6;
+} */
