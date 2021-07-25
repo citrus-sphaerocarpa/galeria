@@ -42,7 +42,7 @@ class PostsController extends Controller
         $data = request()->validate([
             'image' => 'required|image',
             'caption' => 'max:1000',
-            'tags' => 'max:150',
+            'tags' => '',
         ]);
 
         $imagePath = request('image')->store('uploads', 'public');
@@ -100,8 +100,8 @@ class PostsController extends Controller
         // 認証追加
 
         $data = request()->validate([
-            'caption' => ['max:1000'],
-            'tags' => ['max:150'],
+            'caption' => 'max:1000',
+            'tags' => '',
         ]);
 
         if(!is_null($request->tags)) {
