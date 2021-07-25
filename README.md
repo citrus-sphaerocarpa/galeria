@@ -11,11 +11,12 @@
 - Private message
 - Notifications
 - User profiles
+- Responsive design
 - Localization(JP/EN)
 
 ## Demo site
 You can login and explore galeria on our demo site.
-Note: The Post/Edit/Delete functions and notification feature are disabled for this demo.  
+Note: Some features are disabled for this demo.  
 
 
 Demo site URL: http://galeria-demo.herokuapp.com/  
