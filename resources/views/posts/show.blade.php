@@ -24,7 +24,8 @@
             <div class="uk-width-4-5 uk-padding-small uk-padding-remove-top">
                 <ul class="uk-list uk-list-collapse">
                     <li><a class="uk-link-reset uk-text-bold" href="/profile/{{ $post->user->username }}">{{ $post->user->username }}</a></li>
-                    <li>{{ $post->created_at->format('Y-m-d H:i') }}</li>
+                    <!-- <li>{{ $post->created_at->format('Y-m-d H:i') }}</li> -->
+                    <format-date date="{{ $post->created_at }}"></format-date>
                 </ul>
             </div>
 
