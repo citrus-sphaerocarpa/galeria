@@ -34,6 +34,7 @@ const i18n = new VueI18n({
 
 Vue.component('follow-button', require('./components/FollowButton.vue').default);
 Vue.component('favorite-button', require('./components/FavoriteButton.vue').default);
+Vue.component('format-date', require('./components/FormatDate.vue').default);
 Vue.component('notification-icon', require('./components/NotificationIcon.vue').default);
 Vue.component('private-chat-message', require('./components/PrivateChatMessage.vue').default);
 Vue.component('infinite-scroll', require('./components/InfiniteScroll.vue').default);
