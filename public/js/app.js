@@ -2081,22 +2081,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         _this.total = data.total; //Load posts data per second
 
         setTimeout(function () {
-          // First post
-          if (data.data.length == 1) {
+          if (_this.page <= data.last_page) {
             var _this$posts;
-
-            (_this$posts = _this.posts).push.apply(_this$posts, _toConsumableArray(data.data));
-
-            $state.loaded();
-          } // Second or later
-
-
-          if (_this.page < data.data.length) {
-            var _this$posts2;
 
             _this.page += 1;
 
-            (_this$posts2 = _this.posts).push.apply(_this$posts2, _toConsumableArray(data.data));
+            (_this$posts = _this.posts).push.apply(_this$posts, _toConsumableArray(data.data));
 
             $state.loaded();
           } else {

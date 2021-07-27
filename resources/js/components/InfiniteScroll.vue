@@ -24,7 +24,7 @@
     import InfiniteLoading from 'vue-infinite-loading';
     import axios from 'axios';
 
-     export default {
+    export default {
          props: ['path', 'data'],
 
         data() {
@@ -57,14 +57,8 @@
                     this.total = data.total;
                     //Load posts data per second
                     setTimeout(() => {
-                        // First post
-                        if (data.data.length == 1) {
-                            this.posts.push(...data.data)
-                            $state.loaded()
-                        }
 
-                        // Second or later
-                        if (this.page < data.data.length) {
+                        if (this.page <= data.last_page) {
                             this.page += 1
                             this.posts.push(...data.data)
                             $state.loaded()
@@ -77,5 +71,5 @@
                 })
             },
         }
-    };
+    }
 </script>
