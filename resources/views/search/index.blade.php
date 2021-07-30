@@ -12,19 +12,20 @@
 
 @section('content')
 <div class="uk-container uk-height-viewport">
-
-    <!-- Search Form -->
-    <form class="uk-search uk-search-default uk-width-1-1" action="/search" method="get" id="searchFormLarge">
-        @csrf
-        <button class="uk-search-icon-flip" uk-search-icon></button>
-        <input class="uk-search-input" type="search" name="keywords" value="{{ $search_query }}" placeholder="{{ __('Search')}}">
-    </form>
-    <div class="uk-margin-small-top">
-        @error('keywords')
-            <span class="uk-form-danger" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-        @enderror                
+    <div class="uk-width-2-3@s uk-align-center">
+        <!-- Search Form -->
+        <form class="uk-search uk-search-default uk-width-1-1" action="/search" method="get" id="searchFormLarge">
+            @csrf
+            <button class="uk-search-icon-flip" uk-search-icon></button>
+            <input class="uk-search-input" type="search" name="keywords" value="{{ $search_query }}" placeholder="{{ __('Search')}}">
+        </form>
+        <div class="uk-margin-small-top">
+            @error('keywords')
+                <span class="uk-form-danger" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror                
+        </div>
     </div>
 
     <infinite-scroll path="search" data="{{ $search_query }}"></infinite-scroll>

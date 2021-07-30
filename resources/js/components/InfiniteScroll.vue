@@ -1,13 +1,16 @@
 <template>
-    <div>
+     <div class="uk-width-2-3@s uk-align-center">
         <p v-if="path.match(/search/) && total == 1" class="uk-width-1-1">{{ total }} {{ $t("result") }}</p>
         <p v-if="path.match(/search/) && total > 1" class="uk-width-1-1 uk-margin-small">{{ $t("About") }} {{ total }} {{ $t("results") }}</p>
 
         <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
             <div v-for="post in posts" :key="post.index" class="uk-width-1-3">
-                <a :href="'/p/' + post.id">
-                    <img :src="'/storage/' + post.image" alt="" class="uk-responsive-width" loading="lazy">
-                </a>                                                         
+                <div class="uk-cover-container">
+                    <a :href="'/p/' + post.id">
+                        <canvas width="300" height="300" style="background-color:lightgray;"></canvas>
+                        <img :src="'/storage/' + post.image" alt="" class="uk-responsive-width" loading="lazy" uk-cover>
+                    </a> 
+                </div>                                                        
             </div>
         </div>
 

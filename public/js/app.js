@@ -2044,6 +2044,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -51034,6 +51037,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "uk-width-2-3@s uk-align-center" },
     [
       _vm.path.match(/search/) && _vm.total == 1
         ? _c("p", { staticClass: "uk-width-1-1" }, [
@@ -51061,15 +51065,23 @@ var render = function() {
         },
         _vm._l(_vm.posts, function(post) {
           return _c("div", { key: post.index, staticClass: "uk-width-1-3" }, [
-            _c("a", { attrs: { href: "/p/" + post.id } }, [
-              _c("img", {
-                staticClass: "uk-responsive-width",
-                attrs: {
-                  src: "/storage/" + post.image,
-                  alt: "",
-                  loading: "lazy"
-                }
-              })
+            _c("div", { staticClass: "uk-cover-container" }, [
+              _c("a", { attrs: { href: "/p/" + post.id } }, [
+                _c("canvas", {
+                  staticStyle: { "background-color": "lightgray" },
+                  attrs: { width: "300", height: "300" }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "uk-responsive-width",
+                  attrs: {
+                    src: "/storage/" + post.image,
+                    alt: "",
+                    loading: "lazy",
+                    "uk-cover": ""
+                  }
+                })
+              ])
             ])
           ])
         }),
