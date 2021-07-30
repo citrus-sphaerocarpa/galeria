@@ -6,7 +6,7 @@
         <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
             <div v-for="post in posts" :key="post.index" class="uk-width-1-3">
                 <a :href="'/p/' + post.id">
-                    <img :src="'/storage/' + post.image" alt="" class="uk-responsive-width">
+                    <img :src="'/storage/' + post.image" alt="" class="uk-responsive-width" loading="lazy">
                 </a>                                                         
             </div>
         </div>
