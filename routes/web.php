@@ -68,8 +68,8 @@ Route::delete('/p/{post}/comment/{comment}', [App\Http\Controllers\CommentsContr
 
         // Post
         Route::get('/p/create', [App\Http\Controllers\PostsController::class, 'create']);
-        Route::get('/p/favoriting', [App\Http\Controllers\PostsController::class, 'fetchFavoritingPosts']);
-        Route::get('/p/following', [App\Http\Controllers\PostsController::class, 'fetchFollowingPosts']);
+        Route::get('/p/favoriting', [App\Http\Controllers\PostsController::class, 'fetchFavoritingPosts'])->middleware('cache.headers:public;max_age=60');
+        Route::get('/p/following', [App\Http\Controllers\PostsController::class, 'fetchFollowingPosts'])->middleware('cache.headers:public;max_age=60');
         Route::get('/p/{post}/edit', [App\Http\Controllers\PostsController::class, 'edit']);
         Route::patch('/p/{post}', [App\Http\Controllers\PostsController::class, 'update'])->name('post.update');
         Route::delete('/p/{post}', [App\Http\Controllers\PostsController::class, 'destroy'])->name('post.destroy');
@@ -117,13 +117,13 @@ Route::post('/favorite/{post}', [App\Http\Controllers\FavoritesController::class
 Route::get('/tags', [App\Http\Controllers\PostsController::class, 'fetchTags']);
 
 // Profile
-Route::get('/profile/{username}/posts', [App\Http\Controllers\ProfilesController::class, 'fetchPosts']);
+Route::get('/profile/{username}/posts', [App\Http\Controllers\ProfilesController::class, 'fetchPosts'])->middleware('cache.headers:public;max_age=60');
 
 // Chat
 Route::get('/privatemessages/{uuid}', [App\Http\Controllers\MessagesController::class, 'fetchPrivateMessages']);
 Route::post('/privatemessages/{uuid}', [App\Http\Controllers\MessagesController::class, 'sendPrivateMessage']);
 
 // Search
-Route::get('/search/tag/fetch/{key}', [App\Http\Controllers\SearchController::class, 'fetchTaggedPosts']);
-Route::get('/search/fetch/{key}', [App\Http\Controllers\SearchController::class, 'fetchSearchResults']);
+Route::get('/search/tag/fetch/{key}', [App\Http\Controllers\SearchController::class, 'fetchTaggedPosts'])->middleware('cache.headers:public;max_age=60');
+Route::get('/search/fetch/{key}', [App\Http\Controllers\SearchController::class, 'fetchSearchResults'])->middleware('cache.headers:public;max_age=60');
 
