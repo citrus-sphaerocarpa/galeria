@@ -51064,7 +51064,11 @@ var render = function() {
             _c("a", { attrs: { href: "/p/" + post.id } }, [
               _c("img", {
                 staticClass: "uk-responsive-width",
-                attrs: { src: "/storage/" + post.image, alt: "" }
+                attrs: {
+                  src: "/storage/" + post.image,
+                  alt: "",
+                  loading: "lazy"
+                }
               })
             ])
           ])
